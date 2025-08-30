@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | OBHAS Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>body { font-family: 'Poppins', sans-serif; background-color: #121212; color: #E0E0E0; } .bg-card { background-color: #1E1E1E; } .text-accent { color: #4CAF50; } .border-line { border: 1px solid #3A3A3A; }</style>
+</head>
+<body>
+    <header class="sticky top-0 z-50 bg-card/80 backdrop-blur-sm shadow-lg p-4 md:px-8 border-b border-line">
+        <nav class="flex justify-between items-center max-w-7xl mx-auto">
+            <div class="flex flex-col items-start gap-2">
+                <a href="index.html" class="flex items-center gap-2">
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-green-400 via-blue-500 to-purple-600 shadow-lg">
+                        <span class="font-extrabold text-white text-lg md:text-2xl tracking-widest" style="letter-spacing:0.1em;">OB</span>
+                    </span>
+                    <span class="text-2xl font-bold text-accent tracking-wide">OBHA'S WEB</span>
+                </a>
+                <button onclick="openAISearch()" title="AI Search" class="mt-1 flex items-center gap-1 px-2 py-1 bg-gradient-to-r from-blue-500 to-green-400 text-white rounded shadow hover:from-green-400 hover:to-blue-500 transition text-xs">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                    AI Search
+                </button>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="about.html" class="text-accent">About</a>
+                <a href="skills.html" class="text-gray-400 hover:text-accent transition duration-300">Skills</a>
+                <a href="projects.html" class="text-gray-400 hover:text-accent transition duration-300">Projects</a>
+                <a href="contact.html" class="text-gray-400 hover:text-accent transition duration-300">Contact</a>
+            </div>
+        </nav>
+        <script>
+            function openAISearch() {
+                const query = prompt('What would you like to search for?');
+                if (query) {
+                    alert('AI would search for: ' + query + '\n(This is a placeholder. Integrate with an API for real results.)');
+                }
+            }
+        </script>
+        </header>
+    <main class="max-w-4xl mx-auto p-4 md:p-8">
+        <section class="py-16 md:py-24 text-center relative">
+            <!-- Animated background icons -->
+            <div class="absolute left-0 top-0 w-full h-full pointer-events-none select-none opacity-10 z-0">
+                <svg class="absolute left-10 top-10 animate-spin-slow" width="60" height="60" fill="#4CAF50" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 17.93V20a8 8 0 1 1 0-16v2.07A6 6 0 1 0 13 19.93z"/></svg>
+                <svg class="absolute right-10 bottom-10 animate-bounce" width="40" height="40" fill="#E0E0E0" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+            </div>
+            <!-- Profile Image -->
+            <img src="img/IMG_6012.jpg" alt="OBHAS Avatar" class="mx-auto rounded-full border-4 border-accent shadow-lg w-48 h-48 md:w-64 md:h-64 object-cover mb-6 relative z-10">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-accent relative z-10">About Me</h1>
+            <p class="text-lg md:text-xl text-gray-400 mb-8 relative z-10">
+                <span class="bg-gradient-to-r from-accent to-green-400 bg-clip-text text-transparent animate-pulse">I am OBHAS</span> A passionate <span class="text-accent font-semibold">IT Support</span> and <span class="text-accent font-semibold">Full Stack Developer</span>, building and maintaining the digital world from the ground up.
+            </p>
+            <div class="bg-card rounded-2xl p-8 shadow-xl border-line relative z-10">
+                <p class="text-base md:text-lg text-gray-300 leading-relaxed mb-6">As a dedicated IT Support professional, I have a strong foundation in system administration, troubleshooting, and network management. I enjoy solving complex problems and ensuring a seamless technological experience. My expertise in full-stack development allows me to bridge the gap between user-facing applications and backend infrastructure, creating robust and scalable solutions. I am proficient in modern web technologies and always eager to learn and adapt to new challenges.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                    <div class="bg-gray-900 rounded-xl p-6 border border-line flex flex-col items-center">
+                        <svg width="32" height="32" fill="#4CAF50" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 17.93V20a8 8 0 1 1 0-16v2.07A6 6 0 1 0 13 19.93z"/></svg>
+                        <h3 class="text-lg font-semibold mt-2 mb-1 text-accent">Fun Fact</h3>
+                        <p class="text-gray-400 text-sm">I love automating tasks and making life easier with code!</p>
+                    </div>
+                    <div class="bg-gray-900 rounded-xl p-6 border border-line flex flex-col items-center">
+                        <svg width="32" height="32" fill="#E0E0E0" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+                        <h3 class="text-lg font-semibold mt-2 mb-1 text-accent">Interests</h3>
+                        <p class="text-gray-400 text-sm">Tech gadgets, open-source, music, and exploring new frameworks.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </main>
+    <div class="flex justify-between items-center mt-12">
+        <a href="index.html" class="flex items-center gap-2 text-accent hover:underline font-medium">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg>
+            Previous
+        </a>
+        <a href="skills.html" class="flex items-center gap-2 text-accent hover:underline font-medium">
+            Next
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+        </a>
+    </div>
+    <footer class="text-center text-gray-400 py-6 border-t border-line mt-10">
+        <div class="mb-2 flex flex-wrap justify-center gap-4 items-center">
+            <a href="https://github.com/Owololag/portfolio-" target="_blank" rel="noopener" class="text-accent hover:underline font-medium flex items-center gap-1">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                GitHub
+            </a>
+            <a href="https://instagram.com/yourusername" target="_blank" rel="noopener" class="text-pink-400 hover:underline font-medium flex items-center gap-1">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.242 1.308 3.608.058 1.266.069 1.646.069 4.85s-.011 3.584-.069 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.242 1.246-3.608 1.308-1.266.058-1.646.069-4.85.069s-3.584-.011-4.85-.069c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.242-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.974-.974 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.771.131 4.659.425 3.678 1.406c-.981.981-1.275 2.093-1.334 3.374C2.013 5.668 2 6.077 2 12c0 5.923.013 6.332.072 7.612.059 1.281.353 2.393 1.334 3.374.981.981 2.093 1.275 3.374 1.334C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.281-.059 2.393-.353 3.374-1.334.981-.981 1.275-2.093 1.334-3.374.059-1.28.072-1.689.072-7.612 0-5.923-.013-6.332-.072-7.612-.059-1.281-.353-2.393-1.334-3.374-.981-.981-2.093-1.275-3.374-1.334C15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                Instagram
+            </a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" class="text-blue-400 hover:underline font-medium flex items-center gap-1">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.156 1.459-2.156 2.968v5.699h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.563 2.844-1.563 3.042 0 3.604 2.003 3.604 4.605v5.591zm0 0"/></svg>
+                LinkedIn
+            </a>
+            <a href="https://wa.me/2348187924887" target="_blank" rel="noopener" class="text-green-400 hover:underline font-medium flex items-center gap-1">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.16 1.6 5.97L0 24l6.26-1.64A11.93 11.93 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.19-3.48-8.52zM12 22c-1.85 0-3.68-.5-5.26-1.44l-.38-.22-3.72.98.99-3.62-.25-.37A9.94 9.94 0 0 1 2 12c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.2-7.6c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.41-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.12-.12.28-.32.42-.48.14-.16.18-.28.28-.46.09-.18.05-.34-.02-.48-.07-.14-.61-1.48-.84-2.03-.22-.53-.45-.46-.61-.47-.16-.01-.34-.01-.52-.01-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29s.98 2.66 1.12 2.85c.14.18 1.93 2.95 4.68 4.02.65.28 1.16.45 1.56.58.65.21 1.24.18 1.7.11.52-.08 1.65-.67 1.88-1.32.23-.65.23-1.21.16-1.32-.07-.11-.25-.18-.53-.32z"/></svg>
+                WhatsApp
+            </a>
+        </div>
+        <p>&copy; 2024 OBHA'S WEB. All rights reserved.</p>
+    </footer>
+</body>
+</html>

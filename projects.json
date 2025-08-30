@@ -1,0 +1,16 @@
+[
+  {
+    "title": "E-commerce Platform",
+    "description": "A full-stack e-commerce site with user authentication, product catalog, and secure payment processing. Built with React and Node.js.",
+    "image": "https://images.unsplash.com/photo-1515168833906-d2a3b82b1a48?auto=format&fit=crop&w=800&q=80",
+    "demo": "https://codesandbox.io/s/ecommerce-demo",
+    "details": "ecommerce.html"
+  },
+  {
+    "title": "IT Automation Script",
+    "description": "A Python script designed to automate routine system maintenance tasks, including log cleanup and user provisioning for IT teams.",
+    "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+    "demo": "https://replit.com/@demo/automation-script",
+    "details": "automation.html"
+  }
+]
